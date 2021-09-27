@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_card"
+    tools:context=".signin_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Sign in to your\nAccount"
+            android:textColor="#F10808"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Username"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/signin_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="2dp"
+            android:drawableEnd="@drawable/username_img"
+            android:drawableRight="@drawable/username_img"
+            android:drawableTint="#E65100"
+            android:hint="Enter your username"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/Textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/signin_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="2dp"
+            android:drawableEnd="@drawable/password_img"
+            android:drawableRight="@drawable/password_img"
+            android:drawableTint="#E65100"
+            android:hint="Enter your password"
+            android:maxLines="1"/>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="220dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/forgotP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Forgot Password?"
+                android:textColor="#E65100"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/loginWith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forgotP"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:text="Login with"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_signButton"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/loginWith"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp" />
+
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/google_signButton"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Textview4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_button"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:text="Don't have an account?"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_button"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@+id/Textview4"
+                android:layout_toRightOf="@+id/Textview4"
+                android:text="Register now"
+                android:textColor="#E65100"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" />
+
+    </LinearLayout>
+
+</FrameLayout>

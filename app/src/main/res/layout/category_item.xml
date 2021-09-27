@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/background_category"
+        android:cropToPadding="false"
+        android:scaleType="center"
+        android:src="@drawable/menu_button" />
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_image"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Toys"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
